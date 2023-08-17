@@ -17,4 +17,4 @@ spec:
       - name: quiz-app
         image: rameshpala/quizzapp:5.0
         ports:
-        - containerPort: 80
+        - containerPort: 8080
