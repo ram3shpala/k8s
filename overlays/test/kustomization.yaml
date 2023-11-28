@@ -1,4 +1,8 @@
-bases:
+resources:
   - ../../base
-patchesStrategicMerge:
-  - service-patch.yaml
+patches:
+  - path: service.yaml
+    target:
+      group: v1
+      kind: Service
+      name: quiz-service
