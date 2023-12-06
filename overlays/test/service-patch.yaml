@@ -3,5 +3,4 @@ kind: Service
 metadata:
   name: quiz-service
 spec:
-  nodePort: 34455
   type: NodePort

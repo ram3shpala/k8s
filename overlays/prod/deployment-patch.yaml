@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quiz-deployment
+spec:
+  template:
+    spec:
+      containers:
+      - name: quiz-app
+        image: quay.io/kodekollab/demo:03
+      imagePullSecrets:
+      - name: quay-credentials

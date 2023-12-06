@@ -1,8 +1,15 @@
 resources:
   - ../../base
+  - ingress.yaml
 patches:
-  - path: service.yaml
+  - path: deployment-patch.yaml
     target:
-      group: v1
+      group: apps
+      version: v1
+      kind: Deployment
+      name: quiz-deployment
+  - path: service-patch.yaml
+    target:
+      version: v1
       kind: Service
       name: quiz-service
